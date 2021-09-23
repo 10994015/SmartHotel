@@ -94,7 +94,7 @@
                 </div>
                 <div class="contactBottom">
                     <img src="styles/images/Vector-1.png" alt="" width="42.32" height="35.13">
-                    <input type="range" min="0" max="100" step="1" value="50">
+                    <input type="range" min="0" max="100" step="1" value="50" >
                     <img src="styles/images/Vector-1.png" alt="" width="42.32" height="35.13">
                 </div>
                 
@@ -102,6 +102,15 @@
 
             <div class="calendar">
                 <h1>行事曆 Calendar</h1>
+                <div class="date">
+                    <input type="date" id="theDate" >
+                </div>
+                <div class="calendarBox">
+                    <div class="calendarItem"></div>
+                    <div class="calendarItem"></div>
+                    <div class="calendarItem"></div>
+                </div>
+                <h2>SEE DETAILS<i class="fas fa-angle-right"></i></h2>
             </div>
         </div>
 
@@ -110,5 +119,20 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script/jquery.nice-number.js"></script>
     <script src="script/number.js"></script>
+    <script language="javascript">
+        　$(document).ready(function() {
+                var date = new Date();
+
+                var day = date.getDate();
+                var month = date.getMonth() + 1;
+                var year = date.getFullYear();
+
+                if (month < 10) month = "0" + month;
+                if (day < 10) day = "0" + day;
+
+                var today = year + "-" + month + "-" + day;       
+                $("#theDate").attr("value", today);
+            });
+        </script>
 </body>
 </html>

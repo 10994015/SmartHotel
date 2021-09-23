@@ -5,8 +5,8 @@
     font-family: sans-serif,"微軟正黑體";
 }
 #app{
-    width: 100%;
-    height: 100%;
+    width: 1920px;
+    height: 720px;
     padding: 30px;
     background-color: #384048;
     display: flex;
@@ -218,4 +218,45 @@ main .lightControlBottom .offOn button:focus{
     color:#fff;
     text-align: center;
     padding-top: 10px;
+}
+.rightBar .calendar input[type="date"]{
+    background-color: #4E4F50;
+    color:#fff;
+    font-weight: 600;
+    font-family: "Roboto Mono",monospace;
+    font-size: 18px;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0 25px;
+    height: 40px;
+    margin-top: 10px;
+
+}
+::-webkit-calendar-picker-indicator{
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.calendarBox{
+    height: 300px;
+    width:100%;
+    overflow-y:scroll;
+}
+.calendarBox .calendarItem{
+    width:100%;
+    height:100px;
+    background-color: #fff;
+    border-bottom: 1px #ccc solid;
+}
+.calendar h2{
+    width: 100%;
+    background-color: #9CA0A4;
+    color:#fff;
+    text-align: right;
+    padding: 8px;
+}
+.calendar h2>i{
+    margin-left: 10px;
 }
