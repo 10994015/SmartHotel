@@ -1,0 +1,133 @@
+main{
+    width: 1272.98px;
+    height: 650px;
+    background-color: #9CA0A4;
+    border-radius: 15px;
+    padding: 20px;
+
+}
+main h1{
+    text-align: center;
+    padding-top: 15px;
+}
+main .lightControl{
+    width: 1232px;
+    height: 292;
+    background-color: #fff;
+    border-radius: 20px;
+}
+main .lightControl .lightControlBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:1108.31px;
+    height: 238.17px;
+    margin: auto;
+}
+main .lightControl .lightControlBox .lightControlBigbtn{
+    width: 210.85px;
+    height: 212.76px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #bbb;
+}
+
+main .lightControl .lightControlBox .lightControlbtn{
+    width: 167.92px;
+    height: 166.66px;
+    border-radius:50%;
+    color:#fff;
+    padding-top: 8px;
+    text-shadow: 2px 2px 3px #434a54;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 3px #bbb;
+    cursor: pointer;
+}
+main .lightControl .lightControlBox .lightControlbtn h1{
+    height: 97.51px;
+    width:166.92px;
+    font-size: 30px;
+}
+main .lightControlBottomBox{
+    display: flex;
+    justify-content: space-between;
+}
+main .lightControlBottom{
+    width:386px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+main .lightControlBottom .offOn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 296.59px;
+    height: 67.39px;
+    border-radius: 50px;
+    background-color: #EFEFEF;
+    font-size: 18px;
+    text-shadow: 2px 2px 3px #434a54;
+    color:#fff;
+}
+main #off,#on{
+    /*background: #545453;*/
+    width: 108.22px;
+    height: 59.49px;
+    text-align: center;
+    line-height: 59.49px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+main .airImg{
+    display: flex;
+    align-items: center;
+}
+main .airImg img{
+    margin:  0 10px;
+}
+
+main .lightControlBottom .offOn input[type="number"]{
+	border: none;
+	outline: none;
+	padding: 10px;
+	margin: 0 5px !important;
+	box-shadow: 0 2px 5px;
+    min-width: 155px;
+    height: 35px;
+    font-size: 28px;
+    font-weight: 600;
+    background-color: transparent;
+    
+
+}
+
+main .lightControlBottom .offOn button{
+	background:#545453; 
+	color: #fff;
+	border: none;
+	outline: none;
+	padding: 0 10px;
+	border-radius: 12px;
+	font-weight: 700;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+main .lightControlBottom .offOn button:hover,
+main .lightControlBottom .offOn button:focus{
+	background: #333;
+}

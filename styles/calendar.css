@@ -1,0 +1,95 @@
+main{
+    width: 100%;
+}
+main h1{
+    width: 100%;
+    color:#fff;
+    text-align: center;
+    font-size: 36px;
+    position: relative;
+}
+main h1>i{
+    position: absolute;
+    left: 10px;
+    font-size: 48px;
+    cursor: pointer;
+}
+main .dateCalendar input[type="date"]{
+    background-color: #4E4F50;
+    color:#fff;
+    font-weight: 600;
+    font-family: "Roboto Mono",monospace;
+    font-size: 30px;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0 25px;
+    height: 40px;
+    margin-top: 10px;
+}
+::-webkit-calendar-picker-indicator{
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.calendarBox{
+    height: 500px;
+    width:100%;
+    overflow-y:scroll;
+}
+.calendarBox::-webkit-scrollbar{
+    width:.5em;
+}
+.calendarBox::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.calendarBox::-webkit-scrollbar-thumb {
+	background-color: #ccc;
+	border-radius: 5px;
+  }
+.calendarBox .calendarItem{
+    width:100%;
+    height:125px;
+    background-color: #fff;
+    border-bottom: 1px #ccc solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+    position: relative;
+
+}
+.calendar h2{
+    width: 100%;
+    background-color: #9CA0A4;
+    color:#fff;
+    text-align: right;
+    padding: 8px;
+    cursor: pointer;
+}
+.calendar h2>i{
+    margin-left: 10px;
+}
+.calendarBox .calendarItem h3{
+    font-size: 32px;
+}
+.calendarBox .calendarItem h4{
+    font-weight: 500;
+    font-size: 28px;
+    color:#1484c4;
+    font-weight: 600;
+}
+.calendarBox .calendarItem p{
+    color:#333;
+    font-size: 24px;
+}
+.calendartime{
+    position: absolute;
+    top: calc(50% - 14px);
+    right: 40px;
+    color:#5C4D92;
+    font-size: 28px;
+    font-weight: 600;
+}

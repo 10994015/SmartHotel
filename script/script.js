@@ -2,9 +2,19 @@ var lightControlBigbtn = document.getElementsByClassName('lightControlBigbtn')[0
 var lightControlbtn = document.getElementsByClassName('lightControlbtn');
 var off = document.getElementById("off");
 var on = document.getElementById("on");
+var play = document.getElementById('play');
 
 on.classList.add("onLightColor");
 
+play.addEventListener("click",()=>{
+    if(play.className.length==12){
+        play.classList.add("fa-play");
+    }else{
+        play.classList.remove("fa-play");
+    }
+    
+
+})
 on.addEventListener("click",()=>{
     on.classList.add("onLightColor");
     on.classList.remove("offLightColor");
